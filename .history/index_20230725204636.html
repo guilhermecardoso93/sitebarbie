@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="script.js" defer></script>
+    <title>Barbie - Movie</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <span>Margot Robbie</span>
+        <span>Ryan Gosling</span>
+      </header>
+      <section class="phrase">
+        <h2>Ela é tudo</h2>
+        <h2>Ele é só o Ken</h2>
+      </section>
+      <section class="info">
+        <div class="cine">
+          <p>20 de Julho</p>
+          <p>Somente nos Cinemas</p>
+        </div>
+        <div class="social">
+          <i class="ph-duotone ph-facebook-logo"></i>
+          <i class="ph-duotone ph-tiktok-logo"></i>
+          <i class="ph-duotone ph-instagram-logo"></i>
+          <i class="ph-duotone ph-twitter-logo"></i>
+        </div>
+      </section>
+      <section class="buttons">
+        <button><a href="https://www.veloxtickets.com/" target="_blank"> Compre
+            seu ingresso </a></button>
+        <button><a href="#"  id="openModalBtn">Assista ao trailer</a></button>
+      </section>
+
+      <div id="modalContainer">
+        <iframe width="1280" height="720"
+          id="youtubeIframe"
+          src="https://www.youtube.com/embed/8zIf0XvoL9Y?controls=0"
+          allowfullscreen></iframe>
+      </div>
+      <footer>
+        <i class="ph-duotone ph-speaker-high" onclick="playAudio()"></i>
+        <i class="ph-duotone ph-speaker-slash"></i>
+
+        <audio id="music" loop>
+          <source src="./audio/barbie.mp3" type="audio/mpeg" />
+        </audio>
+
+        <img src="./assets/warner-logo.svg" alt />
+
+        <img src="./assets/scroll.gif" alt width="30px" height="30px"
+          id="scroll" />
+      </footer>
+    </div>
+  </body>
+</html>

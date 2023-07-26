@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "Absolute Blonde";
+  src: url("./fonts/Absolute\ Blonde.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic Std Medium";
+  src: url("./fonts/ITC\ Avant\ Garde\ Gothic\ Std\ Medium.otf")
+    format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 20px 50px;
+  display: inline-block;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  background-image: url("./assets/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  font-family: "Absolute Blonde", sans-serif;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 650px;
+  gap: 70px;
+  height: 100vh;
+  position: relative;
+  margin-left: 125px;
+}
+
+header {
+  display: flex;
+  gap: 150px;
+  margin-top: 80px;
+}
+
+header span {
+  font-size: 80px;
+  font-weight: semi-bold;
+  color: #ffffff;
+  -webkit-text-stroke: 2px #de3aa4;
+  text-stroke: 2px #de3aa4;
+  text-shadow: -1px -1px 0 #de3aa4, 1px -1px 0 #de3aa4, -1px 1px 0 #de3aa4,
+    1px 1px 0 #de3aa4;
+}
+
+.phrase {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: "ITC Avant Garde Gothic Std Medium", sans-serif;
+  justify-content: flex-start;
+  margin-left: 71px;
+}
+
+.phrase h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cine p {
+  font-size: 45px;
+}
+
+.cine p:last-child {
+  font-size: 30px;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+}
+
+i {
+  font-size: 40px;
+}
+
+i:hover {
+  transform: scale(1.4); /* Aumenta o tamanho em 1.5x */
+  color: #de3aa4;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  gap: 25px;
+}
+
+button {
+  font-family: "ITC Avant Garde Gothic Std Medium", sans-serif;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  background: #de3aa4;
+}
+
+button:hover {
+  background-color: #ffffff;
+  border: 2px solid #de3aa4;
+  cursor: pointer;
+}
+
+button a:hover {
+  color: #de3aa4;
+}
+
+footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  bottom: 20px;
+  left: -40px;
+}
+
+footer i {
+  font-size: 40px;
+}
+
+footer i:first-child {
+  cursor: pointer;
+}
+
+.ph-speaker-slash {
+  display: none;
+}
+
+#scroll {
+  margin-left: 175px;
+}
+
+#openModalBtn {
+  cursor: pointer;
+}
+
+#modalContainer {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+  background: rgba(0, 0, 0, 0.7);
+  animation: fadeIn 0.5s;
+}
+
+iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: 5px solid #fff;
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.biro {
+  font-family: "ITC Avant Garde Gothic Std Medium", sans-serif;
+  color: #fff;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
